@@ -7,6 +7,23 @@ public class Main {
         //
         // Skapa två objekt (Spader Dam och Klöver 7)
 
+        Card card1 = new Card();
+        card1.suit = Card.SPADES;
+        card1.rank = 12;
+
+        Card card2 = new Card();
+        card2.suit = Card.CLUBS;
+        card2.rank = 7;
 
     }
+}
+
+class Card {
+    static final int CLUBS = 0;
+    static final int DIAMONDS = 1;
+    static final int HEARTS = 2;
+    static final int SPADES = 3;
+
+    int suit;
+    int rank;
 }
